@@ -1,0 +1,266 @@
+body {
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid crimson;
+}
+
+/*
+
+    * {
+        загальний селектор - вибирає усі елементи на сторінці
+    }
+
+    h1{
+        селектор по тегу - застосовується до вибраного тегу
+    }
+
+    .class-name{
+        селектор класу - задає стиль елементам з відповідним класом
+    }
+
+    #id-element{
+        селектор по ID - вибирає елемент по вказаному ID (ID - унікальний для усього елементу)
+    }
+
+    [type=button]{
+        селектор по атрибуту - застосується до усіх елементів на сторінці 
+                               з відповідним атрибутом
+    }
+
+    p span{
+        селектор нащадка - застосується до усіх тегів span в параграфі
+    }
+
+    p > span{
+        дочірній селектор - жорсткої вкладеності (застосується до прямих нащадків тегу '<p>')
+    }
+
+    p + span{
+        сусідній (сестринський) селектор - застосується до усіх <span>,
+                                           що має сусіда зверху в нашому випадку <p>
+    }
+
+    p:hover {
+        селектор псевдокласу - застосується до усіх тегів <p> на сторінці, при наведенні мишкою...
+    }
+
+*/
+
+/*Загальний селектор  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Змінює алгоритм розрахування висоти і ширини елементів. 
+                          Границі(бордери) та внутрішні відступи (padding) включені у задану висоту і ширину*/
+}
+
+/* селектор по тегу */
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+li {
+  border-left: 4px solid blue;
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+
+/* селектор по ID */
+#list-item {
+  background-color: cadetblue;
+}
+
+/* селектор класу */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* .list, */
+.list *{
+  transition: .3s linear all;
+}
+
+.list__item {
+  background-color: chartreuse;
+}
+
+/* .btn {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 3px;
+  background-color: rgb(231, 76, 60);
+  box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+  border: 1px solid crimson;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+} */
+
+/* селектор по атрибуту */
+[data-list="list-data"] {
+  background-color: coral;
+}
+
+/* Селектор нащадка */
+.list__item-2 span{
+  background-color: cyan;
+}
+
+/* Дочірній селектор */
+.list__item-3 > span{
+  background-color: gold;
+}
+
+/* Сусідній (сестринський) селектор */
+.mark-1 + span{
+  background-color: gray;
+}
+
+/* Селектор псевдокласу при наведенні мишкою */
+/* .list:hover{
+  background-color: rgba(170, 172, 164, 0.431);
+} */
+.list:hover li:hover{
+  background-color: springgreen;
+}
+
+/* [type="submit"] {
+  border: 0;
+}
+
+input[type="text"] {
+  color: red;
+}
+
+[type="tel"] {
+  color: yellowgreen;
+}
+
+a[href="https://create.kahoot.it"]
+{
+  font-size: 16px;
+}
+
+[href="https://create.kahoot.it"]
+{
+  font-size: 20px;
+}
+
+[href="https://create.kahoot.its"]
+{
+  font-size: 32px;
+}
+
+.p1 span {
+  color: yellowgreen;
+}
+
+#list li {
+  color: red;
+}
+
+.box > p {
+  font-size: 20px;
+}
+
+.text2 + p {
+  color: blue;
+}
+
+.block,
+.block * {
+  transition: all 0.2s linear;
+}
+
+.block {
+  width: 120px;
+  border: 1px solid green;
+  margin: 0 auto;
+  background-color: sienna;
+}
+.block:hover {
+  background-color: hotpink;
+}
+
+.block:hover .inner1 {
+  background: khaki;
+}
+.block:hover .inner2 {
+  background: rgba(red, green, blue, 0.4);
+}
+
+.block div {
+  width: 100px;
+  height: 100px;
+}
+.block div:nth-child(1) {
+  background-color: grey;
+}
+
+.inner2 {
+  background-color: #222;
+}
+
+input:focus {
+  outline-color: pink;
+}
+
+p::selection {
+  background-color: black;
+  color: blanchedalmond;
+}
+
+a:visited {
+  color: yellow;
+}
+
+.button-test {
+  width: 200px;
+  height: 50px;
+  background-color: yellow;
+}
+
+button {
+  background-color: #ccc !important;
+}
+
+.inline {
+  background-color: yellowgreen;
+}
+
+.inline-block {
+  background-color: #ccc;
+}
+.content-box {
+  font-size: 0;
+}
+.content-box span {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.block3 {
+  height: 12px;
+  background: yellowgreen;
+} */

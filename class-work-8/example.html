@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чуйна верстка. Адаптивні зображення.</title>
+    <link rel="stylesheet" href="./css/example.css">
+</head>
+
+<body>
+        <section class="adaptive container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </section>
+
+        <section class="responsive container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </section>
+
+    <!-- <div class="img-container">
+        <img src="https://picsum.photos/id/237/200/300" alt="" width="200" height="300">
+    </div>
+
+    <div class="">
+        <img src="https://picsum.photos/id/237/800/600">
+    </div> -->
+
+        <section>
+            <picture>
+                <source srcset="./img/1.png 1x, ./img/2@2x.png 2x" media="(max-width: 576px)">
+                <img src="./img/1.png" srcset="./img/2@2x.png 2x" alt="img">
+            </picture>
+        </section>
+</body>
+
+</html>

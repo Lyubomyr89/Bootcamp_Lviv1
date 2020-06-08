@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Технологія Flexbox</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <form class="reg-form" action="#" name="reg-form" method="GET" enctype="multipart/form-data" accept="image/*">
+            <label for="user-name">Input user name</label>
+            <input id="user-name" class="user-data" type="text" name="user-name" required placeholder="name"
+                minlength="2" maxlength="60">
+
+            <input class="user-data" type="tel" name="user-phone" placeholder="096-000-0000"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <input class="user-data" type="email" name="user-email" required placeholder="email">
+
+            <textarea class="user-data" name="message" cols="30" rows="10" minlength="10" maxlength="50"
+                placeholder="message"></textarea>
+
+            <div class="checkbox">
+                <label class="red">red
+                    <input type="checkbox" name="color1" value="red" checked>
+                </label>
+                <label class="green">green
+                    <input type="checkbox" name="color2" value="green">
+                </label>
+                <label class="blue">blue
+                    <input type="checkbox" name="color3" value="blue">
+                </label>
+            </div>
+
+            <div class="checkbox">
+                <label class="red">red
+                    <input type="radio" name="color" value="red">
+                </label>
+                <label class="green">green
+                    <input type="radio" name="color" value="green" checked>
+                </label>
+                <label class="blue">blue
+                    <input type="radio" name="color" value="blue">
+                </label>
+            </div>
+
+            <div class="select">
+                <select name="city" required>
+                    <option disabled selected>Виберіть місто</option>
+                    <option name="city" value="Київ">Київ</option>
+                    <option name="city" value="Одеса">Одеса</option>
+                    <option name="city" value="Львів">Львів</option>
+                    <option name="city" value="Львів">Львів</option>
+                </select>
+            </div>
+            <button class="btn" type="submit">Відправити</button>
+            <button class="btn" type="reset">Очистити</button>
+        </form>
+    </section>
+</body>
+
+</html>

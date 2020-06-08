@@ -1,0 +1,105 @@
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* p {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.box {
+  width: 50%;
+  height: 300px;
+  margin: 0 auto;
+  background-color: darkslateblue;
+}
+
+.box-inner {
+  width: 50%;
+  height: 50%;
+  background-color: darkturquoise;
+} */
+
+.reg-form * {
+  outline: none;
+}
+.reg-form {
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  border: 1px solid #888888;
+}
+
+.user-data {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 20px 10px;
+  border: 1px solid gainsboro;
+}
+.user-data:focus:invalid{
+  border-color: red;
+}
+.user-data:focus:valid{
+  border-color: green;
+}
+
+textarea.user-data{
+  resize: none;
+}
+
+.checkbox label{
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.select{
+  margin-bottom: 30px;
+}

@@ -1,0 +1,72 @@
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* background-color: blueviolet; */
+}
+
+/* Від 480рх і більше фон жовтий */
+/* @media (min-width: 480px) {
+  body {
+    background-color: yellow;
+  }
+} */
+
+/* Від 992рх і менше фон синій */
+/* @media (max-width: 992px) {
+    body {
+      background-color: blue;
+    }
+  } */
+
+/* Від 480рх до 767рх фон оранжевий*/
+/* @media (min-width: 480px) and (max-width:767px) {
+  body {
+    background-color: orangered;
+  }
+} */
+
+/* Від 480рх до 767рх або від 1200рх і більше -  фон оранжевий*/
+/* @media (min-width: 480px) and (max-width:767px), (min-width:1200px) {
+  body {
+    background-color: orangered;
+  }
+} */
+
+/* @media (min-width: 480px) and (max-width: 767px) {
+  body {
+    background-color: red;
+  }
+} */

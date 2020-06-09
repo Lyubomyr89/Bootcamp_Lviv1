@@ -1,0 +1,217 @@
+html,
+body {
+  font-size: 16px;
+  background-color: #ffffff;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+button,
+input,
+textarea,
+section,
+option {
+  outline: none;
+}
+button {
+  display: block;
+  border: none;
+  background: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 150px);
+
+  border: 1px solid blue;
+  min-height: 400px;
+
+  /*Горизонтальне для колонок вирівнювання*/
+
+  /* justify-content: stretch; */
+  /* justify-content: start; */
+  /* justify-content: end; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
+
+  /*Вертикальне для рядів вирівнювання*/
+
+  /* align-content: stretch; */
+  /* align-content: start; */
+  /* align-content: end; */
+  /* align-content: center; */
+  /* align-content: space-between; */
+  /* align-content: space-around; */
+  align-content: space-evenly;
+
+  /*--Горизонтальне вирівнювання усіх дочірніх елементів --*/
+
+  justify-items: stretch;
+  justify-items: start;
+  justify-items: end;
+  justify-items: center;
+
+  /*--Вертикальне вирівнювання усіх дочірніх елементів --*/
+
+  align-items: stretch;
+  align-items: start;
+  align-items: end;
+  align-items: center;
+
+  padding: 10px;
+  margin: 10px;
+}
+
+.grid__item {
+  padding: 20px;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: red;
+  border: 1px solid black;
+}
+
+.first {
+  /*--Горизонтальне вирівнювання одного елемента --*/
+  justify-self: stretch;
+  /* justify-self: start; */
+  justify-self: end;
+  /* justify-self: center; */
+
+  /*--Вертикальне вирівнювання одного елемента --*/
+  align-self: stretch;
+  /* align-self: start; */
+  align-self: end;
+  /* align-self: center; */
+}
+
+/* ------------------алгоритм вирівнювання----------------------- */
+
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+
+  grid-auto-flow: row;
+  /* grid-auto-flow: column; */
+  grid-auto-flow: row dense;
+
+  border: 1px solid green;
+  min-height: 400px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.grid-auto__item {
+  padding: 20px;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: red;
+  border: 1px solid black;
+}
+
+.grid-auto__item:nth-child(3) {
+  grid-column: span 2;
+  /* order: -1; */
+}
+/* ------------------аналіз вільного простору----------------------- */
+.grid-auto-fill {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(150px, auto)); */
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  grid-gap: 20px;
+  grid-auto-flow: row;
+
+  border: 1px solid yellowgreen;
+  padding: 10px;
+  margin: 10px;
+  transition: 0.3s linear all;
+}
+
+.grid-auto-fill__item {
+  padding: 20px;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: red;
+  border: 1px solid black;
+}
+
+/*
+  96dpi -  1x
+  115dpi - 1.2x
+  144dpi - 1.5x
+  192dpi - 2x
+  288dpi - 3x
+*/
+
+.section-1 {
+  min-height: 500px;
+  background: url("../img/bg-1.png") no-repeat center;
+  background-size: cover;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .section-1 {
+    background: url("https://placeimg.com/960/640/nature") no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+  .section-1 {
+    background: url("../img/bg-1@3x.png") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.btn:hover {
+  background-color: violet;
+}
+.btn {
+  width: 200px;
+  height: 50px;
+  background: yellow url("../img/icons/alarm.svg") no-repeat center;
+}
+
+.tw * {
+  fill: yellowgreen;
+  stroke-width: 5px;
+}
+
+.tw path:nth-child(1) {
+  fill: yellowgreen !important;
+}
+.tw path:nth-child(2) {
+  fill: yellow !important;
+}
+
+.social-icons {
+  /* display: none; */
+  width: 150px;
+  height: 150px;
+  fill: red!important;
+}
+
+.social-icons:hover{
+  fill:#4267b2!important;
+}
+.social-icons svg path {
+}

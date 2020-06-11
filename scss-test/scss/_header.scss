@@ -1,0 +1,53 @@
+.menu {
+  border: 1px solid green;
+
+  &__item {
+    background-color: #cfc;
+    margin-bottom: 2px;
+
+    &::after {
+      content: "";
+    }
+
+    &:hover {
+      background-color: yellow;
+    }
+
+    .item-link {
+      color: red;
+      &:focus {
+        color: blueviolet;
+      }
+
+      &:visited {
+        // color: cyan;
+      }
+    }
+  }
+}
+
+.list {
+  * {
+    font-size: 18px;
+  }
+  .list__item {
+    @extend .menu__item;
+    background-color: blue;
+  }
+}
+
+.test-p {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+
+  div {
+    // @extend %center-el;
+    @include pos-block;
+    width: 400px;
+    height: 400px;
+    background-color: crimson;
+  }
+}

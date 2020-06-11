@@ -1,0 +1,15 @@
+@mixin pos-block($top: 50%, $left: 50%) {
+  position: absolute;
+  left: $top;
+  top: $left;
+}
+
+@mixin tr-c($x: -50%, $y: -50%) {
+  transform: translate($x, $y);
+}
+
+@mixin pos-center() {
+  @include pos-block;
+  @include tr-c;
+  border: 1px solid blue;
+}

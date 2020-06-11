@@ -1,0 +1,46 @@
+/*
+    sass --watch scss:css
+*/
+body {
+  background-color: #ccc;
+  font-size: 20px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.menu {
+  border: 1px solid green; }
+  .menu__item, .list .list__item {
+    background-color: #cfc;
+    margin-bottom: 2px; }
+    .menu__item::after, .list .list__item::after {
+      content: ""; }
+    .menu__item:hover, .list .list__item:hover {
+      background-color: yellow; }
+    .menu__item .item-link, .list .list__item .item-link {
+      color: red; }
+      .menu__item .item-link:focus, .list .list__item .item-link:focus {
+        color: blueviolet; }
+
+.list * {
+  font-size: 18px; }
+.list .list__item {
+  background-color: blue; }
+
+.test-p {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: #fff; }
+  .test-p div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    height: 400px;
+    background-color: crimson; }
+
+/*# sourceMappingURL=styles.css.map */
